@@ -47,6 +47,7 @@
     "@types/jasmine": "^2.6.0",
     "@types/node": "^7.0.5",
     "angular2-tinymce": "^2.1.2",
+    "codecov.io": "^0.1.6",
     "codelyzer": "^2.0.0-beta.4",
     "concurrently": "^3.5.0",
     "gulp": "^3.9.1",
