@@ -26,7 +26,7 @@ script:
 - npm run test_travis --prefix ./Trappist/src/Promact.Trappist.Web
 
 after_success:
-  - istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls
 deploy:
 - provider: script
   script: chmod +x $TRAVIS_BUILD_DIR/deploy.sh && sh $TRAVIS_BUILD_DIR/deploy.sh
