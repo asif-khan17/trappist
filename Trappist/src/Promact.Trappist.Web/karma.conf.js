@@ -59,6 +59,14 @@
                 html: 'coverage/html/report'
             }
         },
+
+        coverageReporter: {
+            dir: 'coverage/',
+            reporters: [
+                { type: 'html' },
+                { type: 'lcov' }
+            ]
+        },
         proxies: {
             "/app/": "/base/wwwroot/app/"
         },
